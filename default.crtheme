@@ -1,0 +1,21 @@
+########################
+#Cream Video Theme File#
+########################
+
+#Font Color
+FNT=ffffff
+
+#Accent Color
+AC=f5a142
+
+#Background Color
+BG=f0f0f0
+
+#Sidebar Color
+SB=121212
+
+#Button Mouse Over Color
+BTNMO=bb86fc
+
+#Button Click Color
+BTNCL=252525

@@ -1,7 +1,7 @@
 ﻿
 namespace CreamVideo
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,137 +29,137 @@ namespace CreamVideo
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.menuButtonLibrary = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.sideBarPanel = new System.Windows.Forms.Panel();
+            this.settingsMenuButton = new System.Windows.Forms.Button();
+            this.libraryMenuButton = new System.Windows.Forms.Button();
+            this.topBarPanel = new System.Windows.Forms.Panel();
+            this.logoPanel = new System.Windows.Forms.Panel();
+            this.logoLabel = new System.Windows.Forms.Label();
+            this.logoPictureBox = new System.Windows.Forms.PictureBox();
+            this.sideBarPanel.SuspendLayout();
+            this.logoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // sideBarPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.menuButtonLibrary);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(285, 887);
-            this.panel1.TabIndex = 0;
+            this.sideBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.sideBarPanel.Controls.Add(this.settingsMenuButton);
+            this.sideBarPanel.Controls.Add(this.libraryMenuButton);
+            this.sideBarPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.sideBarPanel.Location = new System.Drawing.Point(0, 0);
+            this.sideBarPanel.Name = "sideBarPanel";
+            this.sideBarPanel.Size = new System.Drawing.Size(285, 887);
+            this.sideBarPanel.TabIndex = 0;
             // 
-            // panel2
+            // settingsMenuButton
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(161)))), ((int)(((byte)(66)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(285, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1214, 22);
-            this.panel2.TabIndex = 0;
+            this.settingsMenuButton.FlatAppearance.BorderSize = 0;
+            this.settingsMenuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.settingsMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
+            this.settingsMenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingsMenuButton.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.settingsMenuButton.ForeColor = System.Drawing.Color.White;
+            this.settingsMenuButton.Image = ((System.Drawing.Image)(resources.GetObject("settingsMenuButton.Image")));
+            this.settingsMenuButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.settingsMenuButton.Location = new System.Drawing.Point(12, 449);
+            this.settingsMenuButton.Name = "settingsMenuButton";
+            this.settingsMenuButton.Size = new System.Drawing.Size(273, 269);
+            this.settingsMenuButton.TabIndex = 3;
+            this.settingsMenuButton.Text = "Settings";
+            this.settingsMenuButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.settingsMenuButton.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // libraryMenuButton
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(161)))), ((int)(((byte)(66)))));
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(394, 1);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(173, 199);
-            this.panel3.TabIndex = 1;
+            this.libraryMenuButton.FlatAppearance.BorderSize = 0;
+            this.libraryMenuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.libraryMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
+            this.libraryMenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.libraryMenuButton.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.libraryMenuButton.ForeColor = System.Drawing.Color.White;
+            this.libraryMenuButton.Image = ((System.Drawing.Image)(resources.GetObject("libraryMenuButton.Image")));
+            this.libraryMenuButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.libraryMenuButton.Location = new System.Drawing.Point(12, 173);
+            this.libraryMenuButton.Name = "libraryMenuButton";
+            this.libraryMenuButton.Size = new System.Drawing.Size(273, 269);
+            this.libraryMenuButton.TabIndex = 2;
+            this.libraryMenuButton.Text = "Library";
+            this.libraryMenuButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.libraryMenuButton.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // topBarPanel
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(22, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.topBarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(161)))), ((int)(((byte)(66)))));
+            this.topBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topBarPanel.Location = new System.Drawing.Point(285, 0);
+            this.topBarPanel.Name = "topBarPanel";
+            this.topBarPanel.Size = new System.Drawing.Size(1214, 22);
+            this.topBarPanel.TabIndex = 0;
             // 
-            // label1
+            // logoPanel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(22, 158);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 23);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "CreamVideo";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.logoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(161)))), ((int)(((byte)(66)))));
+            this.logoPanel.Controls.Add(this.logoLabel);
+            this.logoPanel.Controls.Add(this.logoPictureBox);
+            this.logoPanel.Location = new System.Drawing.Point(394, 1);
+            this.logoPanel.Name = "logoPanel";
+            this.logoPanel.Size = new System.Drawing.Size(173, 199);
+            this.logoPanel.TabIndex = 1;
             // 
-            // menuButtonLibrary
+            // logoLabel
             // 
-            this.menuButtonLibrary.FlatAppearance.BorderSize = 0;
-            this.menuButtonLibrary.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.menuButtonLibrary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
-            this.menuButtonLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menuButtonLibrary.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.menuButtonLibrary.ForeColor = System.Drawing.Color.White;
-            this.menuButtonLibrary.Image = ((System.Drawing.Image)(resources.GetObject("menuButtonLibrary.Image")));
-            this.menuButtonLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.menuButtonLibrary.Location = new System.Drawing.Point(12, 173);
-            this.menuButtonLibrary.Name = "menuButtonLibrary";
-            this.menuButtonLibrary.Size = new System.Drawing.Size(273, 269);
-            this.menuButtonLibrary.TabIndex = 2;
-            this.menuButtonLibrary.Text = "Library";
-            this.menuButtonLibrary.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.menuButtonLibrary.UseVisualStyleBackColor = true;
+            this.logoLabel.AutoSize = true;
+            this.logoLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoLabel.ForeColor = System.Drawing.Color.White;
+            this.logoLabel.Location = new System.Drawing.Point(22, 158);
+            this.logoLabel.Name = "logoLabel";
+            this.logoLabel.Size = new System.Drawing.Size(129, 23);
+            this.logoLabel.TabIndex = 3;
+            this.logoLabel.Text = "CreamVideo";
             // 
-            // button1
+            // logoPictureBox
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(134)))), ((int)(((byte)(252)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(12, 449);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(273, 269);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Settings";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.logoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("logoPictureBox.Image")));
+            this.logoPictureBox.Location = new System.Drawing.Point(22, 27);
+            this.logoPictureBox.Name = "logoPictureBox";
+            this.logoPictureBox.Size = new System.Drawing.Size(128, 128);
+            this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logoPictureBox.TabIndex = 2;
+            this.logoPictureBox.TabStop = false;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1499, 887);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.logoPanel);
+            this.Controls.Add(this.topBarPanel);
+            this.Controls.Add(this.sideBarPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.sideBarPanel.ResumeLayout(false);
+            this.logoPanel.ResumeLayout(false);
+            this.logoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button menuButtonLibrary;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel sideBarPanel;
+        private System.Windows.Forms.Panel topBarPanel;
+        private System.Windows.Forms.Panel logoPanel;
+        private System.Windows.Forms.Label logoLabel;
+        private System.Windows.Forms.PictureBox logoPictureBox;
+        private System.Windows.Forms.Button libraryMenuButton;
+        private System.Windows.Forms.Button settingsMenuButton;
     }
 }
 

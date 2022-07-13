@@ -7,24 +7,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace CreamVideo
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        LoadManager loadManager = new LoadManager();
+
+        public MainForm()
         {
             InitializeComponent();
+            loadManager.LoadTheme(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\themes\\" + "default.crtheme");
+
+            // bg color
+            this.BackColor  = loadManager.themeColors[(int)LoadManager.ThemeColorType.BackgroundColor];
+        
+            // accent colors
+            topBarPanel.BackColor = loadManager.themeColors[(int)LoadManager.ThemeColorType.AccentColor];
+            logoPanel.BackColor = loadManager.themeColors[(int)LoadManager.ThemeColorType.AccentColor];
+
+            // sidebar color
+            sideBarPanel.BackColor = loadManager.themeColors[(int)LoadManager.ThemeColorType.SidebarColor];
+
+            // button colors
+            libraryMenuButton.FlatAppearance.MouseOverBackColor = loadManager.themeColors[(int)LoadManager.ThemeColorType.ButtonMouseOverColor];
+            libraryMenuButton.FlatAppearance.MouseDownBackColor = loadManager.themeColors[(int)LoadManager.ThemeColorType.ButtonClickColor];
+
+            settingsMenuButton.FlatAppearance.MouseOverBackColor = loadManager.themeColors[(int)LoadManager.ThemeColorType.ButtonMouseOverColor];
+            settingsMenuButton.FlatAppearance.MouseDownBackColor = loadManager.themeColors[(int)LoadManager.ThemeColorType.ButtonClickColor];
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-                
+            
         }
     }
 }
