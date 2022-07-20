@@ -265,7 +265,7 @@ namespace CreamVideo
             this.videoCollectionLibraryPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.videoCollectionLibraryPanel.BackColor = System.Drawing.Color.Lime;
+            this.videoCollectionLibraryPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.videoCollectionLibraryPanel.Location = new System.Drawing.Point(302, 217);
             this.videoCollectionLibraryPanel.Name = "videoCollectionLibraryPanel";
             this.videoCollectionLibraryPanel.Size = new System.Drawing.Size(1185, 658);
