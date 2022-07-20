@@ -9,6 +9,7 @@ namespace CreamVideo
     {
         public List<VideoCollectionLibraryItem> videoCollectionLibraryItemList = new List<VideoCollectionLibraryItem>();
         public Panel videoCollectionLibraryPanel;
+        private VideoCollectionLibraryItem selected = null;
 
         public void Init()
         {
@@ -46,6 +47,28 @@ namespace CreamVideo
                     amtInCurrRow = 0;
                     rowNumber++;
                 }
+            }
+        }
+
+        public void Update()
+        {
+            foreach (VideoCollectionLibraryItem vcli in videoCollectionLibraryItemList)
+            {
+                vcli.collectionPanel.Click += new System.EventHandler(vcli.vcli_Click);
+                vcli.coverPanel.Click += new System.EventHandler(vcli.vcli_Click);
+                vcli.titleLabel.Click += new System.EventHandler(vcli.vcli_Click);
+            }
+        }
+
+        public void SetSelected(VideoCollectionLibraryItem vcli)
+        {
+            if (selected != vcli)
+                selected = vcli;
+            vcli.collectionPanel.BackColor = Manager.accentColor;
+            foreach (VideoCollectionLibraryItem vci in videoCollectionLibraryItemList)
+            {
+                if (vci != vcli) 
+                    vci.collectionPanel.BackColor = Manager.backgroundColor;
             }
         }
     }

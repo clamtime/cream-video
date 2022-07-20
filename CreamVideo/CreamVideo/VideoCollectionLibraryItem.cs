@@ -11,7 +11,7 @@ namespace CreamVideo
     class VideoCollectionLibraryItem
     {
         public Panel collectionPanel, coverPanel;
-        private Label titleLabel;
+        public Label titleLabel;
 
         private string folderName;
         private Point location;
@@ -43,7 +43,7 @@ namespace CreamVideo
 
             collectionPanel.Location = location;
             collectionPanel.Size = Manager.videoCollectionLibraryItemSize;
-            collectionPanel.Margin = new Padding(3);
+            collectionPanel.Padding = new Padding(8);
             collectionPanel.BackColor = Manager.backgroundColor;
             collectionPanel.BorderStyle = BorderStyle.None;
             coverPanel.BorderStyle = BorderStyle.None;
@@ -80,6 +80,11 @@ namespace CreamVideo
         public void SetLocation(Point pos)
         {
             collectionPanel.Location = location = pos;
+        }
+
+        public void vcli_Click(object sender, EventArgs e)
+        {
+            Manager.videoCollectionLibrary.SetSelected(this);
         }
     }
 }

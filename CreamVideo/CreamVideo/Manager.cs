@@ -6,10 +6,15 @@ namespace CreamVideo
 {
     static class Manager
     {
+        // PATHS
         public static string imageDirectoryPath = "M:\\Projects\\Programming\\CreamVideo\\img\\";
         public static string libraryDirectoryPath = "M:\\TV & Movies\\TV";
-        public static Font seriesNameFont   = new Font("Century Gothic", 13F);
+
+        // COLORS + FONTS
         public static Color backgroundColor = Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+        public static Color accentColor = Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(161)))), ((int)(((byte)(66)))));
+        public static Font seriesNameFont = new Font("Century Gothic", 13F);
+
 
         public static Image imageNotFoundImage = Image.FromFile(imageDirectoryPath+"CoverNotFound.png");
         public static VideoCollectionLibrary videoCollectionLibrary = new VideoCollectionLibrary();

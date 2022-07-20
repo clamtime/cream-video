@@ -44,10 +44,10 @@ namespace CreamVideo
             this.logoPanel = new System.Windows.Forms.Panel();
             this.logoLabel = new System.Windows.Forms.Label();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.videoCollectionLibraryPanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.videoCollectionLibraryPanel = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.sideBarPanel.SuspendLayout();
             this.titleBarPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
@@ -228,38 +228,6 @@ namespace CreamVideo
             this.logoPictureBox.TabIndex = 2;
             this.logoPictureBox.TabStop = false;
             // 
-            // panel5
-            // 
-            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(196, 269);
-            this.panel5.TabIndex = 5;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Location = new System.Drawing.Point(1264, 56);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(196, 286);
-            this.panel2.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 13F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 265);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 21);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Death Note (Fake)";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // videoCollectionLibraryPanel
             // 
             this.videoCollectionLibraryPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -270,6 +238,37 @@ namespace CreamVideo
             this.videoCollectionLibraryPanel.Name = "videoCollectionLibraryPanel";
             this.videoCollectionLibraryPanel.Size = new System.Drawing.Size(1185, 658);
             this.videoCollectionLibraryPanel.TabIndex = 8;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Location = new System.Drawing.Point(1288, 44);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(196, 286);
+            this.panel2.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 265);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(196, 21);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Death Note (Fake)";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(196, 269);
+            this.panel5.TabIndex = 5;
             // 
             // MainForm
             // 
@@ -312,11 +311,11 @@ namespace CreamVideo
         private System.Windows.Forms.Button minimizeButton;
         private System.Windows.Forms.Button expandButton;
         public System.Windows.Forms.ImageList ExpandShrinkImageList;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel videoCollectionLibraryPanel;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel5;
     }
 }
 

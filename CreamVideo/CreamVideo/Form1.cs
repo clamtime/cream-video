@@ -44,6 +44,8 @@ namespace CreamVideo
 
             settingsMenuButton.FlatAppearance.MouseOverBackColor = loadManager.themeColors[(int)LoadManager.ThemeColorType.ButtonMouseOverColor];
             settingsMenuButton.FlatAppearance.MouseDownBackColor = loadManager.themeColors[(int)LoadManager.ThemeColorType.ButtonClickColor];
+
+            Manager.videoCollectionLibrary.Update();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
